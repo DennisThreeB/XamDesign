@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamDesign.Page3">
+
+    <!--<ContentPage.Content>
+        <Image Aspect="AspectFill" Source="BackgroundMain.jpg"></Image>
+    </ContentPage.Content>-->
+
+    <Grid>
+
+        <Button Text="Hit Enemy"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnButtonClickedEnemy" />
+
+        <StackLayout>
+            <Label Text="Level: "
+           VerticalOptions="Center"
+           HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="SPS: "
+           VerticalOptions="Center"
+           HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="SPK: "
+           VerticalOptions="Center"
+           HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="HP: "
+           VerticalOptions="Center"
+           HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="Dollars: "
+           VerticalOptions="Center"
+           HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+
+    </Grid>
+
+</ContentPage>

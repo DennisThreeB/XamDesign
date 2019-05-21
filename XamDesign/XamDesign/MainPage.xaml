@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamDesign"
+             x:Class="XamDesign.MainPage">
+
+    <Grid ColumnSpacing="0" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="44"/>
+        </Grid.RowDefinitions>
+
+        <ContentView  x:Name="PlaceHolder" Grid.Row="0">
+
+            <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Image Source="BackgroundMain.png" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" Aspect="AspectFill"/>
+            </AbsoluteLayout>
+        </ContentView>
+
+        <!--Tab Bar -->
+        <Grid ColumnSpacing="0" RowSpacing="0" Grid.Row="2" BackgroundColor="#333333">
+            <Grid.ColumnDefinitions>                
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>                
+            </Grid.ColumnDefinitions>
+            
+            <!--Tab Items-->
+            <StackLayout Spacing="0" Grid.Column="0">
+                <Image HeightRequest="30" Source="CartIcon.png"/>
+                <!--<Label Text="Shop" FontSize="10" TextColor="White" HorizontalOptions="Center"/>-->
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="NavShop_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            
+            <StackLayout Spacing="0" Grid.Column="1">
+                <Image HeightRequest="30" Source="GralIcon.png"/>
+                <!--<Label Text="Heroes" FontSize="10" TextColor="White" HorizontalOptions="Center"/>-->
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="NavHeroes_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            
+            <StackLayout Spacing="0" Grid.Column="2">
+                <Image HeightRequest="30" Source="FightIcon.png"/>
+                <Label Text="ThreeB IT" FontSize="10" TextColor="White" HorizontalOptions="Center"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="NavThree_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            
+            <StackLayout Spacing="0" Grid.Column="3">
+                <Image HeightRequest="30" Source="PlusIcon.png"/>
+                <!--<Label Text="Items" FontSize="10" TextColor="White" HorizontalOptions="Center"/>-->
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="NavItems_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            
+            <StackLayout Spacing="0" Grid.Column="4">
+                <Image HeightRequest="30" Source="MissionIconRaw.png"/>
+                <!--<Label Text="Missions" FontSize="10" TextColor="White" HorizontalOptions="Center"/>-->
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="NavStats_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+        </Grid>
+
+    </Grid>
+</ContentPage>
