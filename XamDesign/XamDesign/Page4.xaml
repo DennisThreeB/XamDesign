@@ -4,6 +4,6 @@
              x:Class="XamDesign.Page4">
 
     <ContentPage.Content>
-        <Image Aspect="AspectFill" Source="BackgroundMain.jpg"></Image>
+        <Image Aspect="AspectFill" Source="ProfBild.png"></Image>
     </ContentPage.Content>
 </ContentPage>

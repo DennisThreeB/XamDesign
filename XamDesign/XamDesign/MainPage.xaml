@@ -31,7 +31,7 @@
             <!--Tab Items-->
             <StackLayout Spacing="0" Grid.Column="0">
                 <Image HeightRequest="30" Source="CartIcon.png"/>
-                <!--<Label Text="Shop" FontSize="10" TextColor="White" HorizontalOptions="Center"/>-->
+                <Label Text="Shop" FontSize="10" TextColor="White" HorizontalOptions="Center"/>
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer Tapped="NavShop_Tapped"/>
                 </StackLayout.GestureRecognizers>
@@ -39,7 +39,7 @@
             
             <StackLayout Spacing="0" Grid.Column="1">
                 <Image HeightRequest="30" Source="GralIcon.png"/>
-                <!--<Label Text="Heroes" FontSize="10" TextColor="White" HorizontalOptions="Center"/>-->
+                <Label Text="Slapper" FontSize="10" TextColor="White" HorizontalOptions="Center"/>
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer Tapped="NavHeroes_Tapped"/>
                 </StackLayout.GestureRecognizers>
@@ -47,7 +47,7 @@
             
             <StackLayout Spacing="0" Grid.Column="2">
                 <Image HeightRequest="30" Source="FightIcon.png"/>
-                <Label Text="ThreeB IT" FontSize="10" TextColor="White" HorizontalOptions="Center"/>
+                <Label Text="Slap" FontSize="10" TextColor="White" HorizontalOptions="Center"/>
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer Tapped="NavThree_Tapped"/>
                 </StackLayout.GestureRecognizers>
@@ -55,7 +55,7 @@
             
             <StackLayout Spacing="0" Grid.Column="3">
                 <Image HeightRequest="30" Source="PlusIcon.png"/>
-                <!--<Label Text="Items" FontSize="10" TextColor="White" HorizontalOptions="Center"/>-->
+                <Label Text="Items" FontSize="10" TextColor="White" HorizontalOptions="Center"/>
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer Tapped="NavItems_Tapped"/>
                 </StackLayout.GestureRecognizers>
@@ -63,7 +63,7 @@
             
             <StackLayout Spacing="0" Grid.Column="4">
                 <Image HeightRequest="30" Source="MissionIconRaw.png"/>
-                <!--<Label Text="Missions" FontSize="10" TextColor="White" HorizontalOptions="Center"/>-->
+                <Label Text="Missions" FontSize="10" TextColor="White" HorizontalOptions="Center"/>
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer Tapped="NavStats_Tapped"/>
                 </StackLayout.GestureRecognizers>

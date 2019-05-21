@@ -2,12 +2,31 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamDesign.Page3">
-
-    <!--<ContentPage.Content>
-        <Image Aspect="AspectFill" Source="BackgroundMain.jpg"></Image>
-    </ContentPage.Content>-->
-
+    
     <Grid>
+        <StackLayout>
+            <Label Text="Level: "
+           VerticalOptions="Center"
+           HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+                   FontSize="14"
+                   FontAttributes="Bold"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="SPS: "
+           VerticalOptions="Center"
+           HorizontalOptions="FillAndExpand" 
+                   Margin="20, 20, 0, 0"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="SPK: "
+           VerticalOptions="Center"
+           HorizontalOptions="FillAndExpand" 
+                   Margin="20,35,0,0"/>
+        </StackLayout>
 
         <Button Text="Hit Enemy"
                 VerticalOptions="CenterAndExpand"
@@ -15,35 +34,18 @@
                 Clicked="OnButtonClickedEnemy" />
 
         <StackLayout>
-            <Label Text="Level: "
-           VerticalOptions="Center"
-           HorizontalOptions="FillAndExpand" />
-        </StackLayout>
-
-        <StackLayout>
-            <Label Text="SPS: "
-           VerticalOptions="Center"
-           HorizontalOptions="FillAndExpand" />
-        </StackLayout>
-
-        <StackLayout>
-            <Label Text="SPK: "
-           VerticalOptions="Center"
-           HorizontalOptions="FillAndExpand" />
-        </StackLayout>
-
-        <StackLayout>
             <Label Text="HP: "
            VerticalOptions="Center"
-           HorizontalOptions="FillAndExpand" />
+           HorizontalOptions="FillAndExpand" 
+                   Margin="220,500,0,0"/>
         </StackLayout>
 
         <StackLayout>
             <Label Text="Dollars: "
            VerticalOptions="Center"
-           HorizontalOptions="FillAndExpand" />
+           HorizontalOptions="FillAndExpand"
+                   Margin="70,500,0,0"/>
         </StackLayout>
-
     </Grid>
 
 </ContentPage>
